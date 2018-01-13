@@ -1,0 +1,61 @@
+<resources>
+
+    <!-- Base application theme. -->
+
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:layoutDirection">ltr</item>
+        <item name="android:popupMenuStyle">@style/AndroidSRC.PopupMenu</item>
+        <item name="android:itemTextAppearance">@style/AndroidSRC.TextAppearance</item>
+    </style>
+
+
+    <style name="splash" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorSplash</item>
+        <item name="colorPrimaryDark">@color/colorSplash</item>
+        <item name="colorAccent">@color/colorSplash</item>
+    </style>
+    <style name="AndroidSRC.PopupMenu" parent="Widget.AppCompat.ListPopupWindow">
+        <item name="android:popupBackground">@color/gray50</item>
+    </style>
+
+    <style name="AndroidSRC.TextAppearance" parent="@android:style/Widget.Holo.Light.TextView">
+        <!--<item name="android:textColor">@color/colorAccent</item>-->
+    </style>
+
+
+    <style name="AppTheme.Translucent">
+        <!-- using a semi-transparent window background for the drag-back gesture -->
+        <item name="android:windowBackground">@color/scrim</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+
+    </style>
+    <style name="AppTheme.Transparent">
+        <!-- using a semi-transparent window background for the drag-back gesture -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+
+    </style>
+
+
+    <style name="customToolBarTheme" parent="ThemeOverlay.AppCompat.Light" >
+        <item name="android:textColorPrimary" >@color/colorWhite</item>
+        <item name="android:textColorSecondary">@color/colorWhite</item>
+    </style>
+
+
+    <color name="colorSplash">#8c1e51</color>
+</resources>

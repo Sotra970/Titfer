@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSplash"
+    tools:context="com.titfer.Activties.SplashActivity">
+
+   <LinearLayout
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <com.inthecheesefactory.thecheeselibrary.widget.AdjustableImageView
+           android:id="@+id/imageView"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:scaleType="centerCrop"
+           android:src="@drawable/top_triangles_splash"
+           android:adjustViewBounds="true"
+           />
+       <FrameLayout
+           android:layout_weight="1"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"></FrameLayout>
+       <ImageView
+           android:adjustViewBounds="true"
+           android:id="@+id/imageView2"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:scaleType="centerCrop"
+           app:srcCompat="@drawable/bottom_triangles_splash"
+           />
+   </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.inthecheesefactory.thecheeselibrary.widget.AdjustableImageView
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/hat"
+            android:adjustViewBounds="true"
+            />
+    </FrameLayout>
+
+    <com.inthecheesefactory.thecheeselibrary.widget.AdjustableImageView
+        android:id="@+id/logo"
+        android:adjustViewBounds="true"
+        android:layout_gravity="center"
+        android:src="@drawable/titfer"
+        android:layout_width="204dp"
+        android:layout_height="wrap_content" />
+</FrameLayout>

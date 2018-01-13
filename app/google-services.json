@@ -1,0 +1,107 @@
+{
+  "project_info": {
+    "project_number": "1036165412095",
+    "firebase_url": "https://titfer-ecffc.firebaseio.com",
+    "project_id": "titfer-ecffc",
+    "storage_bucket": "titfer-ecffc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1036165412095:android:3790c5dcd42be7ee",
+        "android_client_info": {
+          "package_name": "com.example.mohamed.signup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1036165412095-hvso1rn41d6cmoghh83akp2vnebu9epj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mohamed.signup",
+            "certificate_hash": "80b97d4b13ed34a92258cbf2f8a2a248e756d682"
+          }
+        },
+        {
+          "client_id": "1036165412095-di56ntjcfldrjov0b3hb3irslkbehk0e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mohamed.signup",
+            "certificate_hash": "ac666e92f77ede3065addc3ba30ff67b9f397bb0"
+          }
+        },
+        {
+          "client_id": "1036165412095-baesb3imnf7v5sqmh6qlun4fa7atvan2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfy7a66Cq8MtCZ0bd4-99AuT0EkziLMDU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1036165412095-baesb3imnf7v5sqmh6qlun4fa7atvan2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1036165412095:android:5096803f95ceb135",
+        "android_client_info": {
+          "package_name": "com.titfer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1036165412095-7p2feq28umjvi84qqdg2ff46g6op83sn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.titfer",
+            "certificate_hash": "80b97d4b13ed34a92258cbf2f8a2a248e756d682"
+          }
+        },
+        {
+          "client_id": "1036165412095-baesb3imnf7v5sqmh6qlun4fa7atvan2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfy7a66Cq8MtCZ0bd4-99AuT0EkziLMDU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1036165412095-baesb3imnf7v5sqmh6qlun4fa7atvan2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

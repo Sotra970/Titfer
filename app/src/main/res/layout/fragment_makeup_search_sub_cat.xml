@@ -1,0 +1,163 @@
+<FrameLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content_frame"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        tools:context=".Fragments.search.SearchCatFragment">
+
+        <LinearLayout
+            android:id="@+id/bar_back"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_margin="24dp"
+            android:background="@drawable/accent_corner_bg"
+            android:elevation="2dp">
+
+            <ImageView
+
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:src="@drawable/arrow_left"
+                android:tint="@color/white" />
+
+
+            <TextView
+                android:id="@+id/bar_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|left"
+                android:layout_marginRight="12dp"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:maxLines="1"
+                android:text="keyword"
+                android:textColor="@color/white"
+                android:textSize="@dimen/xsmall_text_size" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <!--sec 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="18dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <!--part 1 -->
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/makeup"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/cat_border"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:padding="6dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/makeup"
+                        android:tint="@color/colorAccent" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:background="@drawable/accent_bottom_corner"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:paddingBottom="4dp"
+                        android:paddingEnd="2dp"
+                        android:paddingStart="2dp"
+                        android:paddingTop="4dp"
+                        android:text="@string/Makeup_Artists"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/xsmall_text_size" />
+                </LinearLayout>
+                <!--part 1 -->
+
+                <!--part 2 -->
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/cosmetics"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/cat_border"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:padding="6dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/cosmetics"
+                        android:tint="@color/colorAccent" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:background="@drawable/accent_bottom_corner"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:paddingBottom="4dp"
+                        android:paddingEnd="2dp"
+                        android:paddingStart="2dp"
+                        android:paddingTop="4dp"
+                        android:text="@string/Cosmetics"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/xsmall_text_size" />
+                </LinearLayout>
+                <!--part 2 -->
+            </LinearLayout>
+            <!--sec 1 -->
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

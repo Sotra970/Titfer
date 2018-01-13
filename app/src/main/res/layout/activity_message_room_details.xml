@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout
+    android:background="@color/gray100"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <android.support.v7.widget.Toolbar
+                    app:theme="@style/customToolBarTheme"
+                    android:id="@+id/main_toolbar"
+                    app:contentInsetStartWithNavigation="0dp"
+                    android:elevation="3dp"
+                    android:background="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/bar_back"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="6dp"
+                            android:src="@drawable/arrow_left"
+                            android:tint="@color/icon_gray2"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp" />
+                        <TextView
+                            android:layout_weight="1"
+                            android:id="@+id/mess_room_name"
+                            android:layout_margin="8dp"
+                            android:gravity="left|center"
+                            android:textSize="20dp"
+                            android:textColor="@color/colorAccent"
+                            android:text="@string/messages"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                        <ImageView
+                            android:layout_margin="8dp"
+                            android:id="@+id/toolbar_menu"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_more_vert_black_48dp"
+                            android:tint="@color/icon_gray2"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp" />
+                    </LinearLayout>
+                </android.support.v7.widget.Toolbar>
+                <View
+                    android:background="@drawable/toolbar_bottom_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+            </android.support.design.widget.AppBarLayout>
+    <ImageView
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:background="@drawable/chatbg"
+        android:id="@+id/chat_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+          <FrameLayout
+              android:elevation="1dp"
+              app:layout_behavior="@string/appbar_scrolling_view_behavior"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+              <android.support.v4.widget.SwipeRefreshLayout
+                  xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:id="@+id/swipeRefresh"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+          <FrameLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+              <LinearLayout
+                  android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+                  <android.support.v7.widget.RecyclerView
+                      android:layout_weight="1"
+                      android:id="@+id/message_recycler_view"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"/>
+
+                  <View
+                      android:background="@drawable/toolbar_bottom_line"
+                      android:layout_width="match_parent"
+                      android:layout_height="1dp"/>
+                  <FrameLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+                      <LinearLayout
+                          android:paddingLeft="8dp"
+
+                          android:gravity="center_vertical"
+                          android:weightSum="10"
+                          android:orientation="horizontal"
+                          android:background="@color/white"
+                          android:elevation="4dp"
+                          android:layout_gravity="bottom"
+                          android:layout_height="wrap_content"
+                          android:layout_width="match_parent"
+                          android:minHeight="?actionBarSize">
+                          <EditText
+                              android:textColor="@color/black"
+                              android:background="@android:color/transparent"
+                              android:layout_weight="2"
+                              android:hint="write a message"
+                              android:id="@+id/message_input"
+                              android:layout_width="match_parent"
+                              android:layout_height="match_parent" />
+                          <FrameLayout
+                              android:layout_gravity="bottom"
+                              android:layout_weight="8"
+                              android:layout_width="match_parent"
+                              android:layout_height="match_parent">
+                              <ImageButton
+                                    android:visibility="visible"
+                                  android:id="@+id/send_btt"
+                                  android:elevation="2dp"
+                                  android:src="@drawable/ic_send_white_24dp"
+                                  android:layout_gravity="center"
+                                  android:layout_weight="8"
+                                  android:background="@drawable/accent_circle"
+                                  android:layout_width="48dp"
+                                  android:layout_height="48dp" />
+                          </FrameLayout>
+                      </LinearLayout>
+
+                  </FrameLayout>
+              </LinearLayout>
+
+          </FrameLayout>
+
+
+
+              </android.support.v4.widget.SwipeRefreshLayout>
+          </FrameLayout>
+
+    <TextView
+        android:visibility="gone"
+        android:textSize="@dimen/large_text_size"
+        android:id="@+id/no_rooms"
+        android:text="No Messages "
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+        </android.support.design.widget.CoordinatorLayout>

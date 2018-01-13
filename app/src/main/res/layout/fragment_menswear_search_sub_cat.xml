@@ -1,0 +1,342 @@
+<FrameLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content_frame"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <LinearLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".Fragments.search.SearchCatFragment">
+
+            <LinearLayout
+                android:id="@+id/bar_back"
+                android:elevation="2dp"
+                android:layout_margin="24dp"
+                android:background="@drawable/accent_corner_bg"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                >
+
+                    <ImageView
+
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:src="@drawable/arrow_left"
+                        android:tint="@color/white" />
+
+
+
+                    <TextView
+                        android:layout_marginRight="12dp"
+                        android:layout_gravity="center|left"
+                        android:id="@+id/bar_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:text="keyword"
+                        android:maxLines="1"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/xsmall_text_size" />
+
+                </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <!--sec 1 -->
+                <LinearLayout
+                    android:layout_marginBottom="18dp"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <!--part 1 -->
+                    <LinearLayout
+                        android:id="@+id/suits"
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/cat_border"
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+                        <ImageView
+                            android:padding="6dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/sutis"
+                            android:tint="@color/colorAccent" />
+
+                        <TextView
+                            android:maxLines="1"
+                            android:layout_gravity="bottom"
+                            android:textSize="@dimen/xsmall_text_size"
+                            android:gravity="center"
+                            android:paddingTop="4dp"
+                            android:paddingBottom="4dp"
+                            android:paddingStart="2dp"
+                            android:paddingEnd="2dp"
+                            android:background="@drawable/accent_bottom_corner"
+                            android:textColor="@color/white"
+                            android:text="@string/Suits"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <!--part 1 -->
+
+                    <!--part 2 -->
+                    <LinearLayout
+                        android:id="@+id/fashion_brands"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/cat_border"
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        xmlns:app="http://schemas.android.com/apk/res-auto">
+                        <ImageView
+                            android:padding="6dp"
+                            android:tint="@color/colorAccent"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/men_brands"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                        <TextView
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:layout_gravity="bottom"
+                            android:textSize="@dimen/xsmall_text_size"
+                            android:gravity="center"
+                           android:paddingTop="4dp"
+                            android:paddingBottom="4dp"
+                            android:paddingStart="2dp"
+                            android:paddingEnd="2dp"
+                            android:background="@drawable/accent_bottom_corner"
+                            android:textColor="@color/white"
+                            android:text="@string/Men_Fashion_Brands"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <!--part 2 -->
+                </LinearLayout>
+                <!--sec 1 -->
+
+
+
+                <!--sec 2 -->
+                <LinearLayout
+                    android:layout_marginBottom="18dp"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <!--part 1 -->
+                    <LinearLayout
+                        android:id="@+id/ready"
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/cat_border"
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        xmlns:app="http://schemas.android.com/apk/res-auto">
+                        <ImageView
+                            android:padding="6dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:tint="@color/colorAccent"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/men_ready_to_wear"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                        <TextView
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:layout_gravity="bottom"
+                            android:textSize="@dimen/xsmall_text_size"
+                            android:gravity="center"
+                           android:paddingTop="4dp"
+                            android:paddingBottom="4dp"
+                            android:paddingStart="2dp"
+                            android:paddingEnd="2dp"
+                            android:background="@drawable/accent_bottom_corner"
+                            android:textColor="@color/white"
+                            android:text="@string/Men_Ready_to_Wear"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <!--part 1 -->
+
+                    <!--part 2 -->
+                    <LinearLayout
+                        android:id="@+id/sportswear"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/cat_border"
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        xmlns:app="http://schemas.android.com/apk/res-auto">
+                        <ImageView
+                            android:padding="6dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:id="@+id/cat_img"
+                            android:tint="@color/colorAccent"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/men_sportswear"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                        <TextView
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:layout_gravity="bottom"
+                            android:textSize="@dimen/xsmall_text_size"
+                            android:gravity="center"
+                            android:id="@+id/cat_name"
+                           android:paddingTop="4dp"
+                            android:paddingBottom="4dp"
+                            android:paddingStart="2dp"
+                            android:paddingEnd="2dp"
+                            android:background="@drawable/accent_bottom_corner"
+                            android:textColor="@color/white"
+                            android:text="@string/Men_Sportswear"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <!--part 2 -->
+                </LinearLayout>
+                <!--sec 2 -->
+
+
+
+
+                <!--sec 3 -->
+                <LinearLayout
+                    android:layout_marginBottom="18dp"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <!--part 1 -->
+                    <LinearLayout
+                        android:id="@+id/accessries"
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/cat_border"
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+                        <ImageView
+                            android:padding="6dp"
+                            android:id="@+id/imageView3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/men_accessories"
+                            android:tint="@color/colorAccent" />
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:background="@drawable/accent_bottom_corner"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:paddingBottom="4dp"
+                            android:paddingEnd="2dp"
+                            android:paddingStart="2dp"
+                            android:paddingTop="4dp"
+                            android:text="@string/Men_Accessories"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/xsmall_text_size" />
+                    </LinearLayout>
+                    <!--part 1 -->
+
+                    <!--part 2 -->
+                    <LinearLayout
+                        android:id="@+id/bags"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/cat_border"
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        xmlns:app="http://schemas.android.com/apk/res-auto">
+                        <ImageView
+                            android:padding="6dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:tint="@color/colorAccent"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/men_shoes"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                        <TextView
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:layout_gravity="bottom"
+                            android:textSize="@dimen/xsmall_text_size"
+                            android:gravity="center"
+                           android:paddingTop="4dp"
+                            android:paddingBottom="4dp"
+                            android:paddingStart="2dp"
+                            android:paddingEnd="2dp"
+                            android:background="@drawable/accent_bottom_corner"
+                            android:textColor="@color/white"
+                            android:text="@string/Men_Shoes_and_Bag"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <!--part 2 -->
+                </LinearLayout>
+                <!--sec 3 -->
+
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ScrollView
+        android:id="@+id/container"
+        android:fillViewport="true"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.titfer.Activties.login.LoginHostActivity">
+
+
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="bottom|center"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_weight="1"
+                    android:src="@drawable/login_titfer_logo"
+                    android:adjustViewBounds="true"
+                    android:layout_width="212dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="2dp"
+                    android:textSize="@dimen/xl_text_size"
+                    android:text="Welcome!"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    fontPath="fonts/CaviarDreamsBold.ttf"
+                    />
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:textColor="@color/colorSecondaryText"
+                        android:textSize="@dimen/small_text_size"
+                        android:text="titfer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        fontPath="fonts/fashion.ttf"
+                        />
+                    <TextView
+                        android:gravity="left"
+                        android:textColor="@color/colorSecondaryText"
+                        android:layout_marginLeft="2dp"
+                        android:textSize="@dimen/small_text_size"
+                        android:text=" is a fashion marketplace, and"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        fontPath="fonts/CaviarDreamsBold.ttf"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:textColor="@color/colorSecondaryText"
+                    android:layout_marginTop="2dp"
+                    android:textSize="@dimen/small_text_size"
+                    android:text="all-in-one platform for fashionistas."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    fontPath="fonts/CaviarDreamsBold.ttf"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/customer_signyp"
+                    android:layout_marginRight="48dp"
+                    android:layout_marginLeft="48dp"
+                    android:gravity="center"
+                    android:layout_marginBottom="4dp"
+                    android:textColor="@color/white"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:background="@drawable/accent_corner1_bg"
+                    android:layout_marginTop="2dp"
+                    android:textSize="@dimen/mid_text_size"
+                    android:text="customer sign up"
+                    android:layout_width="196dp"
+                    android:layout_height="wrap_content"
+                    fontPath="fonts/CaviarDreamsBold.ttf"
+                    />
+                <TextView
+                    android:id="@+id/profession_signup"
+                    android:layout_marginRight="48dp"
+                    android:layout_marginLeft="48dp"
+                    android:gravity="center"
+                    android:layout_marginBottom="4dp"
+                    android:textColor="@color/white"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:background="@drawable/accent_corner2_bg"
+                    android:layout_marginTop="2dp"
+                    android:textSize="@dimen/large_text_size"
+                    android:text="professional sign up"
+                    android:layout_width="196dp"
+                    android:layout_height="wrap_content"
+                    fontPath="fonts/CaviarDreamsBold.ttf"
+                    />
+                <TextView
+                    android:id="@+id/login"
+                    android:layout_marginRight="48dp"
+                    android:layout_marginLeft="48dp"
+                    android:gravity="center"
+                    android:layout_marginBottom="8dp"
+                    android:textColor="@color/white"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:background="@drawable/accent_corner_bg"
+                    android:layout_marginTop="2dp"
+                    android:textSize="@dimen/large_text_size"
+                    android:text="login"
+                    android:layout_width="196dp"
+                    android:layout_height="wrap_content"
+                    fontPath="fonts/CaviarDreamsBold.ttf"
+                    />
+                <TextView
+                    android:textColor="@color/colorAccent"
+                    android:layout_marginTop="2dp"
+                    android:textSize="@dimen/large_text_size"
+                    android:text="Or login with"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    fontPath="fonts/CaviarDreamsBold.ttf"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center"
+                    >
+
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:src="@drawable/facebook"
+                            android:tint="@color/colorAccent"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:id="@+id/fb_sing_in_img"
+                            />
+                        <com.facebook.login.widget.LoginButton
+                            android:visibility="gone"
+                            android:id="@+id/fb_login_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginBottom="30dp" />
+                    </FrameLayout>
+
+
+
+                    <FrameLayout
+                        android:layout_marginRight="12dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:src="@drawable/twitter"
+                            android:tint="@color/colorAccent"
+                            android:id="@+id/twitter_sing_in_img"
+                            />
+                        <com.twitter.sdk.android.core.identity.TwitterLoginButton
+                            android:visibility="gone"
+                            android:id="@+id/twitter_login_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.gms.common.SignInButton
+                            android:id="@+id/google_sign_in"
+                            android:visibility="gone"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="20dp"/>
+                        <ImageView
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:src="@drawable/google"
+                            android:tint="@color/colorAccent"
+                            android:id="@+id/google_sing_in_img"
+                            />
+                    </FrameLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Login progress -->
+    <ProgressBar
+        android:layout_gravity="center"
+        android:id="@+id/progressView"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+</android.support.design.widget.CoordinatorLayout>
+

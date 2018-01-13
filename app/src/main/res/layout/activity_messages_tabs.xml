@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.titfer.Activties.cahting.MessagesTabsActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/trainer_appbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="6dp"
+        app:theme="@style/customToolBarTheme">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            app:contentInsetStart="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/bar_back"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/arrow_left"
+                        android:tint="@color/icon_gray2" />
+
+                    <TextView
+                        android:text="Messages"
+                        android:textColor="@color/colorAccent"
+                        android:id="@+id/imageView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:textSize="20dp"
+                        android:gravity="center"
+                        android:tint="@color/logo_pink" />
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/toolbar_bottom_line" />
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+
+
+        <LinearLayout
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <android.support.v7.widget.CardView
+                app:cardBackgroundColor="@color/colorAccent"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                android:layout_margin="24dp"
+                android:background="@drawable/accent_corner_bg"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                >
+
+                <android.support.design.widget.TabLayout
+                    app:tabMode="fixed"
+                    app:tabGravity="fill"
+                    android:id="@+id/tab_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:outlineProvider="background"
+                    app:tabTextColor="@color/white"
+                    app:tabSelectedTextColor="@color/colorAccent"
+                    app:tabIndicatorHeight="0dp"
+                    app:tabBackground="@drawable/tab_color_selector"
+                    app:tabIndicatorColor="@color/white"
+                    />
+
+            </android.support.v7.widget.CardView>
+
+
+
+
+            <!--// pager section  -->
+            <android.support.v4.widget.NestedScrollView
+                android:layout_weight="1"
+                android:fillViewport="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </android.support.v4.widget.NestedScrollView>
+
+        </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

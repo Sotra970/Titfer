@@ -1,0 +1,346 @@
+<FrameLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/content_frame"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+      <LinearLayout
+          android:focusable="true"
+          android:focusableInTouchMode="true"
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="@color/white"
+          android:orientation="vertical"
+          tools:context=".Fragments.search.SearchCatFragment">
+
+         <LinearLayout
+             android:layout_margin="24dp"
+             android:background="@drawable/dark_gray_border"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             >
+
+            <ImageView
+                android:id="@+id/toolbar_search"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/search"
+                android:tint="@color/icon_gray2" />
+
+            <View
+                android:background="@drawable/diver"
+                android:layout_width="2dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                />
+
+            <EditText
+                android:imeActionLabel="search"
+                android:imeOptions="actionSearch"
+                android:id="@+id/key_word"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="48dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center|left"
+                android:hint="keyword"
+                android:maxLines="1"
+                android:src="@drawable/titfer"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="@dimen/xsmall_text_size" />
+
+         </LinearLayout>
+         
+      
+           <LinearLayout
+               android:layout_marginLeft="24dp"
+               android:layout_marginRight="24dp"
+               android:orientation="vertical"
+               android:layout_weight="1"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+              <!--sec 1 -->
+              <LinearLayout
+                  android:layout_marginBottom="18dp"
+                  android:orientation="horizontal"
+                  android:layout_weight="1"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+                 <!--part 1 -->
+                 <LinearLayout
+                     android:id="@+id/fashion_brands"
+                     android:layout_marginEnd="8dp"
+                     android:layout_weight="1"
+                     android:background="@drawable/cat_border"
+                     xmlns:android="http://schemas.android.com/apk/res/android"
+                     android:orientation="vertical"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     xmlns:app="http://schemas.android.com/apk/res-auto">
+
+                    <ImageView
+                        android:padding="12dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/fashion"
+                        android:tint="@color/colorAccent" />
+
+                    <TextView
+                           android:maxLines="1"
+                           android:layout_gravity="bottom"
+                           android:textSize="@dimen/xsmall_text_size"
+                           android:gravity="center"
+                           android:paddingTop="4dp"
+                           android:paddingBottom="4dp"
+                           android:paddingStart="2dp"
+                           android:paddingEnd="2dp"
+                           android:background="@drawable/accent_bottom_corner"
+                           android:textColor="@color/white"
+                           android:text="@string/Fashion_Brands"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content" />
+                     </LinearLayout>
+                    <!--part 1 -->
+
+                 <!--part 2 -->
+                 <LinearLayout
+                     android:id="@+id/fashion_designers"
+                     android:layout_marginStart="8dp"
+                     android:layout_weight="1"
+                     android:background="@drawable/cat_border"
+                     xmlns:android="http://schemas.android.com/apk/res/android"
+                     android:orientation="vertical"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     xmlns:app="http://schemas.android.com/apk/res-auto">
+                    <ImageView
+                        android:padding="12dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:tint="@color/colorAccent"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/fashion2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:layout_gravity="bottom"
+                        android:textSize="@dimen/xsmall_text_size"
+                        android:gravity="center"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:background="@drawable/accent_bottom_corner"
+                        android:textColor="@color/white"
+                        android:text="@string/Fashion_Designers"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                 </LinearLayout>
+                 <!--part 2 -->
+              </LinearLayout>
+              <!--sec 1 -->
+
+
+
+              <!--sec 2 -->
+              <LinearLayout
+                  android:layout_marginBottom="18dp"
+                  android:orientation="horizontal"
+                  android:layout_weight="1"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+                 <!--part 1 -->
+                 <LinearLayout
+                     android:id="@+id/jewelry"
+                     android:layout_marginEnd="8dp"
+                     android:layout_weight="1"
+                     android:background="@drawable/cat_border"
+                     xmlns:android="http://schemas.android.com/apk/res/android"
+                     android:orientation="vertical"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     xmlns:app="http://schemas.android.com/apk/res-auto">
+
+                    <ImageView
+                        android:padding="12dp"
+                        android:id="@+id/imageView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/neck"
+                        android:tint="@color/colorAccent" />
+
+                    <TextView
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:layout_gravity="bottom"
+                        android:textSize="@dimen/xsmall_text_size"
+                        android:gravity="center"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:paddingStart="2dp"
+                        android:paddingEnd="2dp"
+                        android:background="@drawable/accent_bottom_corner"
+                        android:textColor="@color/white"
+                        android:text="@string/Jewelry"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                 </LinearLayout>
+                 <!--part 1 -->
+
+                 <!--part 2 -->
+                 <LinearLayout
+                     android:id="@+id/hairdressers"
+                     android:layout_marginStart="8dp"
+                     android:layout_weight="1"
+                     android:background="@drawable/cat_border"
+                     xmlns:android="http://schemas.android.com/apk/res/android"
+                     android:orientation="vertical"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     xmlns:app="http://schemas.android.com/apk/res-auto">
+                    <ImageView
+                        android:padding="12dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:id="@+id/cat_img"
+                        android:tint="@color/colorAccent"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/hairdressers"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:layout_gravity="bottom"
+                        android:textSize="@dimen/xsmall_text_size"
+                        android:gravity="center"
+                        android:id="@+id/cat_name"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:paddingStart="2dp"
+                        android:paddingEnd="2dp"
+                        android:background="@drawable/accent_bottom_corner"
+                        android:textColor="@color/white"
+                        android:text="@string/Hairdressers"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                 </LinearLayout>
+                 <!--part 2 -->
+              </LinearLayout>
+              <!--sec 2 -->
+
+
+
+
+              <!--sec 3 -->
+              <LinearLayout
+                  android:layout_marginBottom="18dp"
+                  android:orientation="horizontal"
+                  android:layout_weight="1"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+                 <!--part 1 -->
+                 <LinearLayout
+                     android:id="@+id/makeup"
+                     android:layout_marginEnd="8dp"
+                     android:layout_weight="1"
+                     android:background="@drawable/cat_border"
+                     xmlns:android="http://schemas.android.com/apk/res/android"
+                     android:orientation="vertical"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     xmlns:app="http://schemas.android.com/apk/res-auto">
+                    <ImageView
+                        android:padding="12dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:tint="@color/colorAccent"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/brush"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:layout_gravity="bottom"
+                        android:textSize="@dimen/xsmall_text_size"
+                        android:gravity="center"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:paddingStart="2dp"
+                        android:paddingEnd="2dp"
+                        android:background="@drawable/accent_bottom_corner"
+                        android:textColor="@color/white"
+                        android:text="@string/Makeup_Artists"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                 </LinearLayout>
+                 <!--part 1 -->
+
+                 <!--part 2 -->
+                 <LinearLayout
+                     android:id="@+id/MensWear"
+                     android:layout_marginStart="8dp"
+                     android:layout_weight="1"
+                     android:background="@drawable/cat_border"
+                     xmlns:android="http://schemas.android.com/apk/res/android"
+                     android:orientation="vertical"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     xmlns:app="http://schemas.android.com/apk/res-auto">
+                    <ImageView
+                        android:padding="12dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:tint="@color/colorAccent"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/menswear"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:layout_gravity="bottom"
+                        android:textSize="@dimen/xsmall_text_size"
+                        android:gravity="center"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:paddingStart="2dp"
+                        android:paddingEnd="2dp"
+                        android:background="@drawable/accent_bottom_corner"
+                        android:textColor="@color/white"
+                        android:text="@string/MensWear"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                 </LinearLayout>
+                 <!--part 2 -->
+              </LinearLayout>
+              <!--sec 3 -->
+
+           
+             
+              
+              
+           </LinearLayout>    
+
+      </LinearLayout>
+
+</FrameLayout>

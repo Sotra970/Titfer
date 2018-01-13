@@ -1,0 +1,302 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+                <EditText
+                    android:id="@+id/first_name_prof_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/signup"
+                    android:hint="@string/first_name"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="8dp"
+                    android:textColor="@color/logo_pink"
+                    android:textSize="@dimen/mid_text_size"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/last_name_prof_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/signup"
+                    android:hint="@string/last_name"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="8dp"
+                    android:textColor="@color/logo_pink"
+                    android:textSize="@dimen/mid_text_size"
+                    android:textStyle="bold" />
+
+
+
+                <EditText
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/signup"
+                    android:hint="@string/brand_name"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="8dp"
+                    android:textColor="@color/logo_pink"
+                    android:textSize="@dimen/mid_text_size"
+                    android:textStyle="bold"
+                    android:id="@+id/brandName_prof_input"
+                    />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:gravity="left|center"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginBottom="8dp"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="8dp"
+                    android:background="@drawable/signup"
+                    android:hint="@string/country"
+                    android:textSize="@dimen/mid_text_size"
+                    android:textStyle="bold"
+                    android:textColor="@color/logo_pink"
+                    android:id="@+id/county_btn"
+                    />
+
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginLeft="26dp"
+                    android:layout_marginBottom="18dp"
+                    android:src="@drawable/play_arrow"
+                    android:background="@drawable/arrow_background"
+                    android:layout_gravity="center|end"
+                    />
+            </FrameLayout>
+
+
+            <EditText
+                    android:id="@+id/email_prof_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/signup"
+                    android:hint="@string/email"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="8dp"
+                    android:textColor="@color/logo_pink"
+                    android:textSize="@dimen/mid_text_size"
+                    android:textStyle="bold" />
+
+                <EditText
+
+                    android:id="@+id/phone_prof_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/signup"
+                    android:hint="@string/phone_number"
+                    android:imeOptions="actionNext"
+                    android:inputType="phone"
+                    android:maxLines="1"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="8dp"
+                    android:textColor="@color/logo_pink"
+                    android:textSize="@dimen/mid_text_size"
+                    android:textStyle="bold" />
+
+
+
+                <EditText
+
+                    android:id="@+id/password_prof_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/signup"
+                    android:hint="@string/password"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="8dp"
+                    android:textColor="@color/logo_pink"
+                    android:textSize="@dimen/mid_text_size"
+                    android:textStyle="bold" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:gravity="left|center"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginBottom="8dp"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="8dp"
+                    android:background="@drawable/signup"
+                    android:hint="@string/profession"
+                    android:textSize="@dimen/mid_text_size"
+                    android:textStyle="bold"
+                    android:textColor="@color/logo_pink"
+                    android:id="@+id/profession_btn"
+                    />
+
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginLeft="26dp"
+                    android:layout_marginBottom="18dp"
+                    android:src="@drawable/play_arrow"
+                    android:background="@drawable/arrow_background"
+                    android:layout_gravity="center|end"
+                    />
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:gravity="left|center"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginBottom="8dp"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="8dp"
+                    android:background="@drawable/signup"
+                    android:hint="@string/specialty"
+                    android:textSize="@dimen/mid_text_size"
+                    android:textStyle="bold"
+                    android:textColor="@color/logo_pink"
+                    android:id="@+id/specialty_btn"
+                    />
+
+                <ImageView
+                    android:elevation="2dp"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginLeft="26dp"
+                    android:layout_marginBottom="18dp"
+                    android:src="@drawable/play_arrow"
+                    android:background="@drawable/arrow_background"
+                    android:layout_gravity="center|end"
+                    />
+            </FrameLayout>
+
+
+
+            <CheckBox
+                android:visibility="gone"
+                android:id="@+id/prof_terms_input_check_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="8dp"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:layoutDirection="rtl"
+                android:text="@string/terms"
+                android:textColor="@color/logo_pink"
+                android:textSize="@dimen/mid_text_size"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/register_prof_btn"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="84dp"
+                android:layout_marginLeft="84dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/button_accent"
+                android:text="@string/update"
+                android:textColor="@color/white"
+                android:textSize="@dimen/mid_text_size"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:layout_gravity="center"
+            android:id="@+id/progressView"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:visibility="gone" />
+
+    </android.support.design.widget.CoordinatorLayout>
+</ScrollView>

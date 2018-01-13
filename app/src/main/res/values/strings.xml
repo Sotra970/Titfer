@@ -1,0 +1,189 @@
+<resources>
+    <string name="app_name">titfer</string>
+
+
+    <!--Assem - signup-->
+    <string name="customer_signup">Customer Signup</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="username">Username</string>
+    <string name="brand_name">Brand Name</string>
+    <string name="profession">Profession</string>
+    <string name="specialty">Specialty (pick 2)</string>
+    <string name="password">Password</string>
+    <string name="email">Email Address</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="terms">I accept terms and conditions</string>
+    <string name="register">Register</string>
+
+    <string name="login">Login</string>
+
+    <string name="call">CALL</string>
+    <string name="msg">Message</string>
+    <string name="designer_name">DESIGNER NAME</string>
+    <string name="address">City, Country</string>
+    <string name="bio">bio 150 characters:........</string>
+
+    <!--validation-->
+    <string name="empty_field_first_name">Enter first name</string>
+    <string name="empty_field_last_name">Enter last name</string>
+    <string name="empty_field_username">Enter username</string>
+    <string name="empty_field_tile">Enter title</string>
+    <string name="empty_field_caption">Enter caption</string>
+    <string name="empty_field_bio">Enter your Bio</string>
+    <string name="empty_field_desc">Enter description</string>
+    <string name="empty_field_email">Enter email</string>
+    <string name="empty_field_phone">Enter phone</string>
+    <string name="empty_field_password">Enter password</string>
+    <string name="empty_field_check_box">Accept terms</string>
+
+    <string name="invalid_first_name">Invalid name form</string>
+    <string name="invalid_last_name">Invalid name form</string>
+    <string name="invalid_username">Invalid username form</string>
+    <string name="invalid_email">Invalid email form</string>
+    <string name="invalid_phone">Invalid phone form</string>
+    <string name="invalid_password">invalid</string>
+    <string name="empty_field_brand_name">Enter brand name</string>
+
+    <string name="com.twitter.sdk.android.CONSUMER_KEY">QYeUMdFF1Fm51nZ5hYTiOkNnk</string>
+    <string name="com.twitter.sdk.android.CONSUMER_SECRET">qwXbcpM2HMdDx1KHWMbu7aPSbwMlvR61CZbPmnnnqWqeCaGG8Y</string>
+
+    <string name="facebook_app_id">1828320293849404</string>
+    <string name="fb_login_protocol_scheme">fb1828320293849404</string>
+
+    <array name="professionList">
+        <item>@string/Fashion_Brands</item>
+        <item>@string/Fashion_Designers</item>
+        <item>@string/Jewelry</item>
+        <item>@string/Hairdressers</item>
+        <item>@string/Makeup_Artists</item>
+        <item>@string/MensWear</item>
+    </array>
+
+
+    <string-array name="specialtyList">
+        <item>@string/Couture</item>
+
+
+        <item>@string/Ready2wear</item>
+        <item>@string/Ethnic</item>
+        <item>@string/Shoesandbags</item>
+        <item>@string/Sportswear</item>
+        <item>@string/Wedding</item>
+        <item>@string/Abaya</item>
+
+        <item>@string/Makeup_Artists</item>
+        <item>@string/Cosmetics</item>
+
+        <item>@string/Accessories</item>
+        <item>@string/Jewelry</item>
+
+
+        <item>@string/Suits</item>
+        <item>@string/Men_Fashion_Brands</item>
+        <item>@string/Men_Ready_to_Wear</item>
+        <item>@string/Men_Sportswear</item>
+        <item>@string/Men_Accessories</item>
+        <item>@string/Men_Shoes_and_Bag</item>
+
+
+        <item>@string/Blogs</item>
+    </string-array>
+
+
+    <array name="countryList">
+        <item>@string/Egypt</item>
+        <item>@string/Lebanon</item>
+        <item>@string/Turkey</item>
+        <item>@string/UAE</item>
+    </array>
+
+    <string name="Egypt">Egypt</string>
+    <string name="Lebanon">Lebanon</string>
+    <string name="Jordon">Done</string>
+    <string name="Turkey">Turkey</string>
+    <string name="UAE">UAE</string>
+    <string name="done">Done</string>
+    <string name="cancel">Cancel</string>
+    <string name="at_most_2">Maximum 2 items</string>
+    <string name="at_least_2">Must pick two</string>
+    <string name="empty_chicked_proffession">Must pick profession</string>
+    <string name="empty_chicked_country">Must pick country</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="logout">logout</string>
+    <string name="cat_sh_img">cat_sh_img</string>
+    <string name="lorem">
+        “ A brief bio about the designer 150 characters ”
+    </string>
+
+
+    <string name="Fashion_Brands">Fashion Brands</string>
+    <string name="Fashion_Designers">Fashion Designers</string>
+    <string name="Jewelry">Jewelry</string>
+    <string name="Hairdressers">Hairdressers</string>
+    <string name="Makeup_Artists">Makeup Artists</string>
+    <string name="Professionals">Professionals</string>
+
+    <string name="Couture">Couture</string>
+    <string name="Ready2wear">Ready to wear</string>
+    <string name="Ethnic">Ethnic</string>
+    <string name="Sportswear">Sportswear</string>
+    <string name="Shoesandbags">Shoes and bags</string>
+    <string name="Wedding">Wedding</string>
+    <string name="Abaya">Abaya</string>
+    <string name="Accessories">Accessories</string>
+    <string name="Cosmetics">Cosmetics</string>
+    <string name="Blogs">blogs</string>
+
+
+    <string name="Suits">Suits </string>
+    <string name="Men_Fashion_Brands">Men Fashion Brands</string>
+    <string name="Men_Ready_to_Wear">Men Ready to Wear</string>
+    <string name="Men_Sportswear">Men Sportswear </string>
+    <string name="Men_Accessories">Men Accessories </string>
+    <string name="Men_Shoes_and_Bag">Men Shoes and Bag</string>
+
+
+    <string name="problem">report a problem </string>
+    <string name="inncorect_email_or_pass">please check your email and password and try again</string>
+    <string name="dublicated_brand">brand name  already exist</string>
+    <string name="dublicated_phone">this phone already exist</string>
+    <string name="dublicated_email">this email already exist</string>
+    <string name="no_conn">please check your connection and try again later</string>
+    <string name="regestration_success">Restration success</string>
+    <string name="add_album_title">Add your Album title</string>
+    <string name="add_image_cap">Add caption for image</string>
+    <string name="edit_img">Edit Image</string>
+    <string name="toast_unexpected_error">toast_unexpected_error</string>
+    <string name="toast_cannot_retrieve_cropped_image">toast_cannot_retrieve_cropped_image</string>
+    <string name="message">MESSAGE</string>
+    <string name="album_title">album name</string>
+    <string name="country">Country</string>
+    <string name="no_search_results">No Search Results</string>
+    <string name="write_comment">Write comment</string>
+    <string name="no_albums">no albums yet</string>
+    <string name="no_items_yet">no items yet</string>
+    <string name="follow">FOLLOW</string>
+    <string name="edit_profile_info">Edit profile info</string>
+    <string name="update">update</string>
+    <string name="MensWear">Mens Wear</string>
+
+
+    !-- Assem - cart -->
+    <string name="price">Price 100.00</string>
+    <string name="shipping">Shipping within 2 - 5 days</string>
+    <string name="confirm">Confirm</string>
+
+    <!--Mayar-->
+    <string name="recommended">recommended</string>
+    <string name="makeup_tips">Live fashion &amp; makeup tips</string>
+    <string name="empty_field">cant\'t be empty</string>
+    <string name="messages">Messages</string>
+    <string name="live_feed"><![CDATA[live feed & more]]></string>
+    <string name="verfied">Verify</string>
+
+
+</resources>

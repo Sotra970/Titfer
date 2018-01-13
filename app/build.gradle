@@ -1,0 +1,88 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion "25.0.3"
+    defaultConfig {
+        applicationId "com.titfer"
+        minSdkVersion 17
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+
+repositories {
+    maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+    maven {
+        url "https://jitpack.io"
+    }
+
+    mavenCentral()
+}
+
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+
+    compile 'com.android.support:appcompat-v7:25.3.1'
+
+    compile 'com.android.support:design:25.3.1'
+
+    compile 'com.android.support:cardview-v7:25.3.1'
+    compile 'com.android.support:support-v4:25.3.1'
+
+
+    compile 'com.firebaseui:firebase-ui-storage:0.6.0'
+
+    compile 'uk.co.chrisjenx:calligraphy:2.2.0'
+
+    compile 'com.inthecheesefactory.thecheeselibrary:adjustable-imageview:1.0.0'
+
+    compile 'com.google.firebase:firebase-database:11.0.4'
+
+    compile 'com.google.firebase:firebase-auth:11.0.4'
+
+    compile 'com.google.android.gms:play-services-auth:11.0.4'
+
+    compile 'com.twitter.sdk.android:twitter-core:3.1.0'
+
+    compile 'com.twitter.sdk.android:tweet-ui:3.1.0'
+
+    compile 'com.twitter.sdk.android:tweet-composer:3.1.0'
+
+    compile 'com.twitter.sdk.android:twitter-mopub:3.1.0'
+
+    compile 'com.facebook.android:facebook-android-sdk:4.23.+'
+
+    compile 'com.yalantis:ucrop:2.2.0-native'
+
+    compile 'com.google.firebase:firebase-storage:11.0.4'
+
+    compile 'com.firebaseui:firebase-ui-database:2.0.0'
+
+    compile 'com.michaelpardo:activeandroid:3.1.0-SNAPSHOT'
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.3.0'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.8.0'
+    compile 'com.google.firebase:firebase-messaging:11.0.4'
+    compile 'com.github.bumptech.glide:glide:4.0.0'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.jakewharton:butterknife:8.7.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.7.0'
+
+}
+apply plugin: 'com.google.gms.google-services'
